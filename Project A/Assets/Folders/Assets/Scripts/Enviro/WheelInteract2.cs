@@ -11,8 +11,9 @@ public class WheelInteract2 : Interactable
     private bool doorOpen = false;
 
     [SerializeField] private Animator doorAnim = null;
-    [SerializeField] private string openAnimationName = "Wheel_Open";
-    [SerializeField] private string closeAnimationName = "Wheel_Close";
+    [SerializeField] private string WheelopenAnimation = "Wheel_Open2";
+    //[SerializeField] private string closeAnimationName = "Wheel_Close2";
+    [SerializeField] private string DoorcloseAnimation = "Door_Close";
 
     [SerializeField] private int waitTimer = 1;
     [SerializeField] private bool pauseInteraction = false;
@@ -31,7 +32,7 @@ public class WheelInteract2 : Interactable
     {
         if (!doorOpen && !pauseInteraction)
         {
-            doorAnim.Play(openAnimationName, 0, 0.0f);
+            doorAnim.Play(WheelopenAnimation, 0, 0.0f);
             doorOpen = true;
             StartCoroutine(PauseDoorInteraction());
             //a.MethodA(gameObject);
@@ -40,7 +41,8 @@ public class WheelInteract2 : Interactable
 
         else if (doorOpen && !pauseInteraction)
         {
-            doorAnim.Play(closeAnimationName, 0, 0.0f);
+            doorAnim.Play(DoorcloseAnimation, 0, 0.0f);
+            //doorAnim.Play(closeAnimationName, 0, 0.0f);
             doorOpen = false;
             StartCoroutine(PauseDoorInteraction());
             //a.MethodB(gameObject);

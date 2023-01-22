@@ -765,8 +765,8 @@ MonoBehaviour:
   highColor: {fileID: 2100000, guid: 702c15e3ba66d13449301535c48bf7b6, type: 2}
   regColor: {fileID: 2100000, guid: 3094b8025c393794198a6eb6f4c75bcf, type: 2}
   doorAnim: {fileID: 1186056499}
-  openAnimationName: Wheel_Open
-  closeAnimationName: Wheel_Close
+  WheelopenAnimation: Wheel_Open2
+  DoorcloseAnimation: Door_Close
   waitTimer: 1
   pauseInteraction: 0
   door: {fileID: 1186056494}
@@ -862,7 +862,7 @@ MonoBehaviour:
   regColor: {fileID: 2100000, guid: 3094b8025c393794198a6eb6f4c75bcf, type: 2}
   doorAnim: {fileID: 1186056499}
   openAnimationName: Wheel_Open
-  closeAnimationName: Wheel_Close
+  closeAnimationName2: Door_Close
   waitTimer: 1
   pauseInteraction: 0
   door: {fileID: 1186056494}
@@ -1518,6 +1518,26 @@ PrefabInstance:
     - target: {fileID: 2113890986390143470, guid: be6da570ffcdb9c4bbe17d47fcfed118, type: 3}
       propertyPath: m_TagString
       value: TagWheel2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2785002844732145264, guid: be6da570ffcdb9c4bbe17d47fcfed118, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2785002844732145264, guid: be6da570ffcdb9c4bbe17d47fcfed118, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2785002844732145264, guid: be6da570ffcdb9c4bbe17d47fcfed118, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2785002844732145264, guid: be6da570ffcdb9c4bbe17d47fcfed118, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2785002844732145264, guid: be6da570ffcdb9c4bbe17d47fcfed118, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5493319462608339848, guid: be6da570ffcdb9c4bbe17d47fcfed118, type: 3}
       propertyPath: m_LocalRotation.w
