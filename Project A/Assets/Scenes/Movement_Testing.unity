@@ -524,20 +524,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6274059880062070182, guid: be6da570ffcdb9c4bbe17d47fcfed118, type: 3}
---- !u!114 &990586125
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 990586120}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64ae928df8c104448b1620d3b7fff65c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  highlight: {fileID: 0}
-  highColor: {fileID: 0}
 --- !u!1 &1028862848
 GameObject:
   m_ObjectHideFlags: 0
@@ -790,8 +776,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64ae928df8c104448b1620d3b7fff65c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlight: {fileID: 1143346939}
   highColor: {fileID: 2100000, guid: 702c15e3ba66d13449301535c48bf7b6, type: 2}
+  regColor: {fileID: 2100000, guid: 3094b8025c393794198a6eb6f4c75bcf, type: 2}
 --- !u!1 &1186056494 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8068073526183931155, guid: be6da570ffcdb9c4bbe17d47fcfed118, type: 3}
@@ -876,8 +862,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64ae928df8c104448b1620d3b7fff65c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlight: {fileID: 0}
-  highColor: {fileID: 0}
+  highColor: {fileID: 2100000, guid: 702c15e3ba66d13449301535c48bf7b6, type: 2}
+  regColor: {fileID: 2100000, guid: 3094b8025c393794198a6eb6f4c75bcf, type: 2}
 --- !u!1 &1399078923
 GameObject:
   m_ObjectHideFlags: 0
@@ -1482,6 +1468,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 3094b8025c393794198a6eb6f4c75bcf, type: 2}
+    - target: {fileID: -3929786937234293973, guid: be6da570ffcdb9c4bbe17d47fcfed118, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3094b8025c393794198a6eb6f4c75bcf, type: 2}
     - target: {fileID: -1950733119399844177, guid: be6da570ffcdb9c4bbe17d47fcfed118, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -1514,6 +1504,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1341667214368065763, guid: be6da570ffcdb9c4bbe17d47fcfed118, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3094b8025c393794198a6eb6f4c75bcf, type: 2}
     - target: {fileID: 5493319462608339848, guid: be6da570ffcdb9c4bbe17d47fcfed118, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1

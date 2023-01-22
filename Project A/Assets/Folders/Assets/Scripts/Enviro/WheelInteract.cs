@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class WheelInteract : Interactable
 {
-    public GameObject highlight;
+    //public GameObject highlight;
     public Material highColor;
+    public Material regColor;
 
     public override void OnFocus()
     {
-        highlight.GetComponent<MeshRenderer>().material = highColor;
+        GetComponent<MeshRenderer>().material = highColor;
     }
 
     public override void OnInteract()
@@ -19,6 +20,6 @@ public class WheelInteract : Interactable
 
     public override void OnLoseFocus()
     {
-        print("Stopped looking at gameObject.name");
+        GetComponent<MeshRenderer>().material = regColor;
     }
 }
