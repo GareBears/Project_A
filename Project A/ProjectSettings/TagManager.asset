@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - TagDoor
+  - TagWheel2
+  - TagWheel
   layers:
   - Default
   - TransparentFX

@@ -750,7 +750,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2951650304025065680, guid: be6da570ffcdb9c4bbe17d47fcfed118, type: 3}
---- !u!114 &1143346945
+--- !u!114 &1143346947
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -759,7 +759,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1143346939}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64ae928df8c104448b1620d3b7fff65c, type: 3}
+  m_Script: {fileID: 11500000, guid: 80e749ae439c0de4fb2c4c104c2d4d29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   highColor: {fileID: 2100000, guid: 702c15e3ba66d13449301535c48bf7b6, type: 2}
@@ -770,6 +770,7 @@ MonoBehaviour:
   waitTimer: 1
   pauseInteraction: 0
   door: {fileID: 1186056494}
+  wheel: {fileID: 1366161920}
 --- !u!1 &1186056494 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8068073526183931155, guid: be6da570ffcdb9c4bbe17d47fcfed118, type: 3}
@@ -865,6 +866,7 @@ MonoBehaviour:
   waitTimer: 1
   pauseInteraction: 0
   door: {fileID: 1186056494}
+  wheel2: {fileID: 1143346939}
 --- !u!1 &1399078923
 GameObject:
   m_ObjectHideFlags: 0
@@ -1513,6 +1515,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 3094b8025c393794198a6eb6f4c75bcf, type: 2}
+    - target: {fileID: 2113890986390143470, guid: be6da570ffcdb9c4bbe17d47fcfed118, type: 3}
+      propertyPath: m_TagString
+      value: TagWheel2
+      objectReference: {fileID: 0}
     - target: {fileID: 5493319462608339848, guid: be6da570ffcdb9c4bbe17d47fcfed118, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -1532,6 +1538,10 @@ PrefabInstance:
     - target: {fileID: 5493319462608339848, guid: be6da570ffcdb9c4bbe17d47fcfed118, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7706276795254390916, guid: be6da570ffcdb9c4bbe17d47fcfed118, type: 3}
+      propertyPath: m_TagString
+      value: TagWheel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be6da570ffcdb9c4bbe17d47fcfed118, type: 3}

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WheelInteract : Interactable
+public class WheelInteract2 : Interactable
 {
     //public GameObject highlight;
     public Material highColor;
@@ -18,9 +18,9 @@ public class WheelInteract : Interactable
     [SerializeField] private bool pauseInteraction = false;
 
     public GameObject door;
-    public GameObject wheel2;
+    public GameObject wheel;
     DoorAnima a;
-    WheelInteract2 w;
+    WheelInteract p;
 
     public override void OnFocus()
     {
@@ -35,16 +35,16 @@ public class WheelInteract : Interactable
             doorOpen = true;
             StartCoroutine(PauseDoorInteraction());
             //a.MethodA(gameObject);
-            w.MethodWO(gameObject);
+            p.MethodWOP(gameObject);
         }
 
         else if (doorOpen && !pauseInteraction)
         {
-            doorAnim.Play(closeAnimationName, -1, 0.0f);
+            doorAnim.Play(closeAnimationName, 0, 0.0f);
             doorOpen = false;
             StartCoroutine(PauseDoorInteraction());
             //a.MethodB(gameObject);
-            w.MethodWC(gameObject);
+            p.MethodWCP(gameObject);
         }
     }
 
@@ -63,17 +63,17 @@ public class WheelInteract : Interactable
     public void Start()
     {
         a = GameObject.FindGameObjectWithTag("TagDoor").GetComponent<DoorAnima>();
-        w = GameObject.FindGameObjectWithTag("TagWheel2").GetComponent<WheelInteract2>();
-        MethodWOP(gameObject);
-        MethodWCP(gameObject);
+        p = GameObject.FindGameObjectWithTag("TagWheel").GetComponent<WheelInteract>();
+        MethodWO(gameObject);
+        MethodWC(gameObject);
     }
 
-    public void MethodWOP(GameObject g)
+    public void MethodWO(GameObject g)
     {
         doorOpen = true;
     }
 
-    public void MethodWCP(GameObject g)
+    public void MethodWC(GameObject g)
     {
         doorOpen = false;
     }
