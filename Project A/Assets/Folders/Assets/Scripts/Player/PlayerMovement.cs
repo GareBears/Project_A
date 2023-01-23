@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public CharacterController controller;
 
     public GameObject flashlight;
-    private bool flashon = true;
+    private bool flashon = false;
 
     public float speed = 12f;
     public float gravity = -9.81f;
