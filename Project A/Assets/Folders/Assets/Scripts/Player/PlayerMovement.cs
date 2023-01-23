@@ -6,6 +6,9 @@ public class PlayerMovement : MonoBehaviour
 {
     public CharacterController controller;
 
+    public GameObject flashlight;
+    private bool flashon = true;
+
     public float speed = 12f;
     public float gravity = -9.81f;
     public float jumpHeight = 3f;
@@ -55,6 +58,17 @@ public class PlayerMovement : MonoBehaviour
         {
             HandleInteractionCheck();
             HandleInteractionInput();
+        }
+
+        if (Input.GetKeyDown(KeyCode.F) && flashon == true)
+        {
+            flashlight.SetActive(false);
+            flashon = false;
+        }
+        else if (Input.GetKeyDown(KeyCode.F) && flashon == false)
+        {
+            flashlight.SetActive(true);
+            flashon = true;
         }
     }
 

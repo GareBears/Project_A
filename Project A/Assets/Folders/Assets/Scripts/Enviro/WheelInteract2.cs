@@ -11,7 +11,7 @@ public class WheelInteract2 : Interactable
     private bool doorOpen = false;
 
     [SerializeField] private Animator doorAnim = null;
-    [SerializeField] private string WheelopenAnimation = "Wheel_Open2";
+    [SerializeField] private string WheelopenAnimation = "Wheel2_Open";
     //[SerializeField] private string closeAnimationName = "Wheel_Close2";
     [SerializeField] private string DoorcloseAnimation = "Door_Close";
 
